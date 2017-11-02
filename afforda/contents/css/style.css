@@ -1,0 +1,461 @@
+body{
+	overflow-x: hidden;
+	font-family: CenturyGothic;
+}
+/*usefull classes*/
+
+@font-face {
+    font-family: CenturyGothic;
+    src: url("../fonts/century_gothic.ttf");
+}
+
+/* 
+####################################
+	GENERAL STYLES
+####################################
+*/
+
+.margin-top-50 {
+	margin-top: 50px;
+}
+
+
+
+/* 
+####################################
+	Banner Slick
+####################################
+*/
+#banner{
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#banner2{
+	background-image: url("../images/banner.jpg");
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#banner3{
+	background-image: url("../images/4.jpg");
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#banner4{
+	background-image: url("../images/10.jpg");
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#bannerSlick{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	z-index: -1;
+}
+
+
+/* 
+####################################
+	Menu Bar
+####################################
+*/
+
+.opaque-navbar {
+    background-color: rgba(0,0,0,0);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 60px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background-color: rgba(0,0,0,0.5);
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 16px;
+}
+
+#affordaLogo {
+	width: 150px;
+	position: relative;
+	bottom: 15px;
+	height: 155px;
+}
+
+.logoRibbon {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.logo {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom: 155px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    border-bottom: 2px solid #fff;
+}
+
+.navbar-inverse .navbar-nav>li.menu-item:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    border-bottom: 2px solid #fff;
+}
+
+.nav.nav-center {
+	display: inline-block;
+	left: 0;
+	right: 0;
+	margin: 0;
+	float: none;
+}
+
+#navBarTop {
+	text-align: center;
+}
+/* 
+####################################
+	Banner Overlay
+####################################
+*/
+
+#slogan {
+    z-index: 999;
+    position: absolute;
+    top: 250px;
+}
+
+#slogan h1 {
+	font-size: 7em;
+	font-weight: 900;
+	color: #3291B7;
+	text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white, 0px 1px 0 white, 0px -1px 0 white, -1px 0px 0 white, 1px 0px 0 white, 2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white, 0px 2px 0 white, 0px -2px 0 white, -2px 0px 0 white, 2px 0px 0 white, 1px 2px 0 white, -1px 2px 0 white, 1px -2px 0 white, -1px -2px 0 white, 2px 1px 0 white, -2px 1px 0 white, 2px -1px 0 white, -2px -1px 0 white;
+	margin-bottom: 70px;
+}
+
+.cta {
+	display: inline;
+    width: 200px;
+    padding: 20px 50px;
+    color: #3291B7;
+	border: 2px solid #fff;
+	font-weight: 900;
+	background-color: rgba(255,255,255,0.5);
+	transition: background-color 1s, color 1s;
+}
+
+.cta:hover {
+	background-color:#3291B7;
+	color: #fff;
+}
+
+#slogan a:hover {
+	text-decoration: none;
+}
+
+/* 
+####################################
+	About Section
+####################################
+*/
+
+.about {
+	margin-top: 50px;
+	height: 800px;
+}
+
+.about .about-img-1 {
+	background-image: url('../images/1.jpg');
+}
+
+.about .about-img-2 {
+	background-image: url('../images/2.jpg');
+	background-position: 0 -130px;
+	transform: rotate(-10deg);
+	top: 200px;
+}
+
+.about .about-img-3 {
+	background-image: url('../images/3.jpg');
+	background-position: 0 -130px;
+    transform: rotate(6deg);
+    top: 390px;
+}
+
+.photo {
+    height: 350px;
+    background-size: cover;
+    padding: 10px;
+    border: 10px solid #F0FFFF;
+    margin: 10px 0;
+    box-shadow: 5px 5px 10px #ccc;
+    position: absolute;
+    width: 100%;
+}
+
+.about-ribbon {
+    background-image: url(../images/ribbon1.png);
+    background-position: 15px 0;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-content {
+	margin-top: 50px;
+    padding-left: 50px;
+    line-height: 1.7;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+.readMore {
+	background-color: #3291B7;
+	color: #fff;
+	padding: 20px 40px;
+	text-decoration: none;
+	transition: background-color 1s, outline 1s, color 1s;
+}
+
+.readMore:hover {
+	outline: 2px solid #3291B7;
+	background-color: #fff;
+	text-decoration: none;
+	color: #3291B7;
+}
+
+/* 
+####################################
+	Product Section
+####################################
+*/
+.individual-products-details {
+	margin: 0;
+	border-bottom: 20px solid #3291B7;
+}
+
+.product-tabs {
+	height: 200px;
+	background-color: #3291B7;
+}
+
+.product-description {
+	padding: 15px 20% 0 20%;
+	margin-bottom: 50px;
+}
+
+.product-tabs h1 {
+	color: #fff;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.product-tabs h1::before {
+	background-image: url('../images/swirl-left.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 135px;
+	height: 50px;
+	content: ""; 
+}
+
+.product-tabs h1::after {
+	background-image: url('../images/swirl-right.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 5px;
+	display: inline-block;
+	width: 135px;
+	left: 10px;
+	height: 50px;
+	content: ""; 
+} 
+
+.product-tab {
+	color: #fff;
+	font-weight: 900;
+	font-size: 16px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.tab {
+	text-align: center;
+	padding: 20px;
+}
+
+.tab a,
+.tab a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+a.product-tab:hover .hover-pointer {
+	/* visibility: visible; */
+	/* transition: visibility 1s; */
+	background-color: red; 
+}
+
+.hover-pointer::after {
+	content: "";
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+    border-width: 20px;
+    bottom: 100%;
+    left: 44%;
+    position: absolute;
+	top: 50px;
+	/* visibility: hidden; */
+}
+
+.product-carousel-pic {
+	height: 300px;
+	background-size: cover;
+}
+.cakepix1 {
+	background-image: url('../images/cakes/baptism_cakes/1.jpg');
+}
+
+.cakepix2 {
+	background-image: url('../images/cakes/birthday_cakes/1.jpg');
+}
+
+.cakepix3 {
+	background-image: url('../images/cakes/character_cakes/1.jpg');
+}
+
+.cakepix4 {
+	background-image: url('../images/cakes/greeting_cakes/main.jpg');
+}
+
+.cakepix5 {
+	background-image: url('../images/cakes/corporate_cakes/main.jpg');
+}
+
+.cakepix6 {
+	background-image: url('../images/cakes/birthday_cakes/1.jpg');
+}
+
+.cakepix7 {
+	background-image: url('../images/cakes/baptism_cakes/1.jpg');
+}
+
+.cakepix8 {
+	background-image: url('../images/cakes/birthday_cakes/1.jpg');
+}
+
+.cakepix9 {
+	background-image: url('../images/cakes/character_cakes/1.jpg');
+}
+
+.cakepix10 {
+	background-image: url('../images/cakes/greeting_cakes/main.jpg');
+}
+
+.cakepix11 {
+	background-image: url('../images/cakes/corporate_cakes/main.jpg');
+}
+
+.cakepix12 {
+	background-image: url('../images/cakes/birthday_cakes/1.jpg');
+}
+
+.frozen1 {
+	background-image: url('../images/frozenDelights/1.jpg');
+}
+
+.frozen2 {
+	background-image: url('../images/frozenDelights/2.jpg');
+}
+
+.frozen3 {
+	background-image: url('../images/frozenDelights/3.jpg');
+}
+
+.frozen4 {
+	background-image: url('../images/frozenDelights/77.jpg');
+}
+
+.frozen5 {
+	background-image: url('../images/frozenDelights/66.jpg');
+}
+
+.frozen6 {
+	background-image: url('../images/frozenDelights/6.jpg');
+}
+
+.frozen7 {
+	background-image: url('../images/frozenDelights/7.jpg');
+}
+
+.frozen8 {
+	background-image: url('../images/frozenDelights/11.jpg');
+}
+
+.frozen9 {
+	background-image: url('../images/frozenDelights/22.jpg');
+}
+
+.frozen10 {
+	background-image: url('../images/frozenDelights/33.jpg');
+}
+
+.frozen11 {
+	background-image: url('../images/frozenDelights/44.jpg');
+}
+
+.frozen12 {
+	background-image: url('../images/frozenDelights/55.jpg');
+}
+
+/* 
+####################################
+	Footer
+####################################
+*/
+
+.contactMap {
+	margin: 0;
+	padding: 0;
+	background-color: #3291B7;
+}
+
+/* 
+####################################
+	Footer
+####################################
+*/
+
+footer {
+	height: 200px;
+	background-color: #3291B7;
+}
